@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "start": "nodemon server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "author": "deepmoina",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.6.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.3",
+    "multer": "^1.4.5-lts.2",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.9",
+    "stripe": "^18.0.0"
+  }
+}
